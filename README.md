@@ -1,25 +1,21 @@
 # SteelInsight
-##项目简介
+## 项目简介
 本项目是一款基于计算机视觉技术的工业质量检测系统，专注于钢材表面缺陷的自动化检测。系统基于 YOLOv8 目标检测算法，结合 PyQt5 可视化界面开发，实现了图片、视频及摄像头实时检测功能，支持缺陷类型识别、置信度显示、坐标定位及检测结果保存，可广泛应用于轧钢厂、汽车制造、航空航天等行业的钢材质量控制场景。
-##核心功能
+## 核心功能
 多源数据检测：支持单张图片、批量图片、视频文件及摄像头实时流检测
 缺陷精准识别：可检测 6 类钢材表面缺陷（开裂、内含物、斑块、点蚀表面、轧制氧化皮、划痕）
 可视化展示：直观显示检测框、缺陷类别、置信度及坐标位置，支持结果表格查看
 结果保存：支持检测后的图片、视频文件导出保存
 高效实时处理：单张图像推理耗时仅 0.02s，满足工业生产线实时检测需求
-##项目结构
+## 项目结构
 steel-defect-detection/
-├── UIProgram/              # UI相关文件
-│   ├── UiMain.py           # 界面布局文件
-│   ├── style.css           # 界面样式文件
-│   └── QssLoader.py        # QSS加载工具
-├── dataset/                # 数据集目录
-│   └── steel_defect/       # 钢材缺陷数据集
-├── weights/                # 模型权重文件
-│   └── best.pt             # 最优训练模型
-├── Config.py               # 系统配置文件
-├── detect_tools.py         # 检测工具函数
-├── main.py                 # 系统主程序
-├── train.py                # 模型训练脚本
-├── installPackages.py      # 依赖安装脚本
-└── requirements.txt        # 依赖包列表
+- UIProgram/          # UI相关文件
+  - UIMain.py         # 界面布局文件
+- dataset/            # 数据集目录
+  - steel_defect/     # 钢材缺陷数据集
+- weights/            # 模型权重文件
+  - best.pt           # 最优训练模型
+- main.py             # 系统主程序
+- train.py            # 模型训练脚本
+- installPackages.py  # 依赖安装脚本
+- requirements.txt    # 依赖包列表
