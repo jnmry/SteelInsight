@@ -8,14 +8,21 @@
 结果保存：支持检测后的图片、视频文件导出保存
 高效实时处理：单张图像推理耗时仅 0.02s，满足工业生产线实时检测需求
 ## 项目结构
-steel-defect-detection/
-- UIProgram/          # UI相关文件
-  - UIMain.py         # 界面布局文件
-- dataset/            # 数据集目录
-  - steel_defect/     # 钢材缺陷数据集
-- weights/            # 模型权重文件
-  - best.pt           # 最优训练模型
-- main.py             # 系统主程序
-- train.py            # 模型训练脚本
-- installPackages.py  # 依赖安装脚本
-- requirements.txt    # 依赖包列表
+## 项目结构
+- README.md                # 项目说明文档
+- CameraTest.py            # 摄像头检测测试脚本
+- UIProgram/               # 可视化界面相关文件
+- imgTest.py               # 图片检测测试脚本
+- yolov8n.pt               # YOLOv8n 基础权重文件
+- SteelDetection/          # 核心功能目录
+  - Config.py            # 配置文件
+  - __pycache__/         # 编译缓存目录
+  - installPackages.py   # 依赖安装脚本
+  - setup.py             # 项目构建/安装配置
+  - train.py             # 模型训练脚本
+  - VideoTest.py         # 视频检测测试脚本
+  - CITATION.cff        # 引用配置文件
+  - MainProgram.py       # 系统主程序
+  - detect_tools.py      # 检测工具类脚本
+  - requirements.txt     # 依赖包列表
+  - weights/             # 模型权重目录
